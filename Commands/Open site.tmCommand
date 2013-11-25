@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>#!/usr/bin/env bash
+
+cd "$TM_PROJECT_DIRECTORY"
+test -f .powder &amp;&amp; open "http://$(cat .powder).dev/"
+test -f .powder || echo ".powder file not found"
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^~@p</string>
+	<key>name</key>
+	<string>Open site</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
+	<key>semanticClass</key>
+	<string>powder</string>
+	<key>uuid</key>
+	<string>B9E54FD3-4F0B-4EF6-8BA3-7935EC8DEE82</string>
+</dict>
+</plist>
